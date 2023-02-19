@@ -8,9 +8,9 @@ import java.util.Set;
 
 public class Book {
     @Id
-    @GeneratedValue(Strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @ManyToMany
-    @JoinTable(name="author_book", JoinColumns= @JoinColumn(name="book_id"),
+    @JoinTable(name="author_book", joinColumns = @JoinColumn(name="book_id"),
         inverseJoinColumns = @JoinColumn(name="author_id"))
 
     private Long id;
