@@ -16,6 +16,7 @@ public class Book {
     private Long id;
     private String title;
     private String isbn;
+    private Set<Author> authors = new HashSet<>();
 
     public Set<Author> getAuthors() {
         return authors;
@@ -25,10 +26,9 @@ public class Book {
         this.authors = authors;
     }
 
-    public Set<Author> authors;
 
 
-        public Long getId() {
+    public Long getId() {
         return id;
     }
 

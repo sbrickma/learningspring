@@ -13,7 +13,7 @@ public class Author {
     private Long id;
     private String firstName;
     private String lastName;
-    private Set<Book> books;
+    private Set<Book> books = new HashSet<>();
 
     public Set<Book> getBooks() {
         return books;
