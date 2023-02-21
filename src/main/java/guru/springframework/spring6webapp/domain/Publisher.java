@@ -16,6 +16,17 @@ public class Publisher {
     private String publisherName;
     private String address;
     private String city;
+    
+    @OneToMany(mappedBy = "publisher")
+    private Set<Book> books;
+
+    public Set<Book> getBooks() {
+        return books;
+    }
+
+    public void setBooks(Set<Book> books) {
+        this.books = books;
+    }
 
     public Long getId() {
         return Id;
